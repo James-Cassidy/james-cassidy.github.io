@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/* Custom Properties, update these for your own design */
+/* Custom Properties can be used in other parts of style.css*/
 
 :root {
     --ff-primary: 'Source Sans Pro', sans-serif;
@@ -54,7 +54,32 @@ img {
     max-width: 100%;
 }
 
-strong{font-weight: var(--fw-bold)}
+strong {font-weight: var(--fw-bold)}
+
+:focus {
+  outline: 2px solid var(--clr-accent);
+  outline-offset: 2px;
+}
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    padding: .5em 2.5em;
+    background: var(--clr-accent);
+    color: var(--clr-dark);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
 
 /* Typography */
 
@@ -94,13 +119,13 @@ h3 { font-size: var(--fs-h3) }
   margin-bottom: 1em;
 }
 
-//Header
+/*Header*/
 
 nav{display: none; }
 
-// Intro Section 
+/* Intro Section */
 .intro{
-  postion: relative; //relative to its postion
+  postion: relative; /*relative to its postion*/
 }
 
 .intro__img{
@@ -115,7 +140,7 @@ nav{display: none; }
   .intro {
       display: grid;
       width: min-content;
-      margin: 0 auto; //Will keep intro centered
+      margin: 0 auto; /*Will keep intro centered*/
       grid-column-gap: 1em;
       grid-template-areas: 
           "img title"
@@ -139,4 +164,53 @@ nav{display: none; }
     left: -1.5em;
     width: calc(100% + 1.5em);
   }
+}
+
+.my-services {
+  background-colour: var(--clr-dark);
+  background-image: url(../img/WFH.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: var(--clr-light);
+  text-align: center;
+}
+
+.section__title--services {
+  color: var(--clr-accent);
+  position: relative;
+}
+
+
+/* Must have 'content' */
+.section__title--services::after {
+  content: '';                   
+  display: block;
+  width: 2em;
+  height: 1px;
+  margin: 0.5em auto 1em;
+  background: var(--clr-light);
+  opacity: 0.25;
+}
+
+.services{
+  margin-bottom: 4em;
+}
+
+/* Smaller screens allows paragraph to have a set width instead of expanding as webpage expands */
+.service {
+  max-width: 500px; 
+  margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+    .services {
+        display: flex;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .service + .service {
+        margin-left: 2em;
+    }
 }
