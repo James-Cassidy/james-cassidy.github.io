@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Alternative Belfast</title>
+  <link rel="stylesheet" type="text/css" href ="styles.css">
+  <meta name="description" content="Alternative Belfast is the place to go to find the most unusual places in Belfast ">
+  <meta name="keywords" content="Alternative Belfast, Fresh Garbage, Limelight, Northern Ireland">
+  <script>
+
+	  
+	 </script>
+</head>
+
+<body>
+<div class ="wrapper"> <!-- Links to the wrapper class in css -->
+
+  <header>Alternative Belfast</header>
+  
+  <nav>
+    <ul>
+	  <li><a href = "index.html">Home</a></li>
+	  <li><a href = "about.html">About</a></li>                <!-- Adds links in the navigation bar that bring the user to other html files -->
+	  <li><a href = "landmarks.html">Landmarks</a></li>
+	  <li><a href = "contacts.html">Contact</a></li>
+	<ul>
+	</nav>
+  
+  <section>
+      	<script>
+	  function imageOn (myImage) {
+	  myImage.src="limelightInside.jpg";
+	  }     //<!-- Rollover Images added to LimeLight Image using Java script -->
+	  function imageOff (myImage) {
+	  myImage.src="limelight.jpg";
+	  }
+	 </script>
+	 
+	     <noscript>This Browser does not support Java Script</noscript> <!-- If the browser used does not support Java script, this message will be displayed -->
+	   
+  <h1>Landmarks</h1>
+  
+  <h2> The Limelight</h2>
+  
+  <p>
+  <img src= "limelight.jpg" alt="The Limelight" title="The Limelight" width = "320px" height = "200px" align="right" hspace="20px"
+  	  	onmouseover="imageOn(this)"
+		onmouseout="imageOff(this)"/>
+  
+  Limelight in Belfast, Northern Ireland is mid-sized live music and night club venue complex, which initially opened in 1987. The complex on the city's Ormeau Avenue consists of Limelight 1 & Limelight 2, as well as a bar called Katy's Bar. The outdoor terrace is called The Rock Garden.
+  Limelight has strong associations with new bands, homegrown talent, and indie/rock/metal club nights.
+  </p>    <!-- adds paragraph to web page -->
+  
+  <h2>Fresh Garbage</h2>
+  <p>
+    <img src= "freshgarbage.jpg" alt="Fresh Garbage" title="Fresh Garbage" width = "320" align="right" hspace="20px"/>
+	Fresh garbage first opened its doors in Bank Street in 1969 and has been a Mecca for youth culture ever since. Renowned for being at the cutting edge of alternative fashion and street fashion, this distinctive shop merits mention in many international guides as well as The Lonely Planet. It has something for everybody and the heady mix of incense and music make any visit to Fresh Garbage an experience.
+	</p>       <!-- adds paragraph to web page -->
+  
+  
+  </section>
+  <aside>
+  <a class="twitter-timeline" height = "820" href="https://twitter.com/BelfastLive?ref_src=twsrc%5Etfw">Tweets by BelfastLive</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </aside>
+  <footer class="clearfloat">
+  Contact us @belfastmet.ac.uk <!-- adds footer to bottom of page, uses clear float class from css --> 
+  </footer>
+  
+</div>
+</body>
+</html>

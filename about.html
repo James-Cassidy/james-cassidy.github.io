@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Alternative Belfast</title> <!-- display title at top of page -->
+  <link rel="stylesheet" type="text/css" href ="styles.css"> <!-- Links the html file to the css file-->
+  <meta name="description" content="Alternative Belfast is the place to go to find the most unusual places in Belfast ">
+  <meta name="keywords" content="Alternative Belfast, Fresh Garbage, Limelight, Northern Ireland">
+
+</head>
+
+<body>
+<div class ="wrapper"> <!-- Links to the wrapper class in css -->
+
+  <header>Alternative Belfast</header>
+  
+  <nav>
+    <ul>
+	  <li><a href = "index.html">Home</a></li>
+	  <li><a href = "about.html">About</a></li>                <!-- Adds links in the navigation bar that bring the user to other html files -->
+	  <li><a href = "landmarks.html">Landmarks</a></li>
+	  <li><a href = "contacts.html">Contact</a></li>
+	<ul>
+	</nav>
+  
+  <section>
+    	<script>
+	  function imageOn (myImage) {
+	  myImage.src="belfastculturebar.jpg";
+	  }                                       // <!-- Rollover Images added to the Culture Night Image using Javascript -->
+	  function imageOff (myImage) {
+	  myImage.src="belfastculture.jpg";
+	  }
+	  
+	function myFunction() {                                   //<!-- Adds a button below the Culture Night Image. When the button is clicked, more text will be revealed -->
+	document.getElementById("culture").innerHTML="Ten years in the making and featuring a cast of thousands, Culture Night Belfast - the biggest evening in the city's cultural calendar - always lands in Sepetember!";
+	}                     
+	  
+	 </script>
+	 
+	   <noscript>This Browser does not support Java Script</noscript> <!-- If the browser used does not support Javascript, this message will be displayed -->
+	   
+  <h1>About Us</h1>
+  
+  <p>
+  Brunch stops and landmark tours are great holiday highlights for when you're in Belfast, but some people prefer to look for the more unusual activities during their stay. That's where we come in. At Alternative Belfast, our aim is to give you everything Belfast has to offer. Whether it’s your first time in the city or you are returning for another fun break, there are plenty of unusual ways to see this cultural city and make it a break you’ll never forget.
+  </p>     <!-- adds paragraph to web page -->
+  <p>
+  Belfast has an infectious atmosphere with a fabulous sense of humour, an ever-growing range of places to eat, drink and be entertained, and a small town feel which makes getting around easy.
+  </p>       <!-- adds paragraph to web page -->
+  
+    <img src= "belfastculture.jpg" alt="Culture Night" title="Culture Night" width = "600px" height = "290px" class="center"
+	  	onmouseover="imageOn(this)"
+		onmouseout="imageOff(this)"/>
+	<!-- adds image below text -->
+	
+	  <p id ="culture"></p>
+  <input type="button" onclick="myFunction()" value="Find out more!" />
+  </section>
+  
+  <aside>
+<a class="twitter-timeline" height = '820' href="https://twitter.com/BelfastLive?ref_src=twsrc%5Etfw">Tweets by BelfastLive</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> <!-- embeds a twitter feed to the right hand side of the webpage -->
+  </aside>
+  <footer class="clearfloat">
+  Contact us @belfastmet.ac.uk <!-- adds footer to bottom of page, uses clearfloat class from css -->  
+  </footer>
+  
+</div>
+</body>
+</html>

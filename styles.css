@@ -1,0 +1,99 @@
+.wrapper { /* wrapper class used to style background and size of webpage */
+	background-color: #6a9ced;
+	width: 1020px;
+	margin: 0 auto;
+}
+
+body {
+	background-image: url("giantscauseway.jpg"); /* makes the background image of the html file a picture of the Giants Causeway */
+}
+header{ /* styles the header 'Alternative Belfast' */
+	height: 75px;
+	background-color: #6a9ced;
+	font-size:56pt;
+	font-family: Aria, Helvetica, sans-serif
+	font-style: italic;
+	text-align: Center;
+	
+}
+
+h1{ /* styles the h1 elements */
+	text-align: center;
+	font-family: Aria, Helvetica, sans-serif;
+	font-size: 22pt;
+
+}
+h2{ /* styles the h2 elements */
+	text-align: left;
+	padding-left: 20px;
+	font-family: Aria, Helvetica, sans-serif;
+	font-size: 16pt;
+
+}
+h3{ /* styles the h2 elements */
+	text-align: left;
+	padding-left: 20px;
+	font-family: Aria, Helvetica, sans-serif;
+	font-size: 14pt;
+
+}
+nav{ /* styles the navigation bar that sits below the header */
+	font-family: Aria, Helvetica, sans-serif;
+	font-size: 14pt;
+	height: 50px;
+	background-color: #6a9ced;
+}
+nav ul{ /* styles the nav ul elements */
+  list-style: none;
+  margin: 0 2px;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.2em;
+	padding:6px 0;
+	display: inline-block;
+}
+nav ul li a:hover{ /* when the user hovers over the nav ul li elements, a grey background will be cast over the text*/
+	text-decoration: none;
+	 background-color: #b2b4b7;
+	color: white;
+}
+
+p{ /* adds padding to paragraphs so they aren't touching the sides of the wrapper class */
+	padding: 10px;
+	font-family: Aria, Helvetica, sans-serif;
+	font-size: 14pt;
+}
+
+.center { /* center class used to centre imgaes within the webpage */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section { /* styles the section tag */
+	width: 700px;
+	height: 800px;
+	background-color: white;
+	float: left;
+	padding: 10px;
+	font-family: Aria, Helvetica, sans-serif;
+	font-size: 14pt;
+}
+aside { /* styles the aside tag */
+	width: 300px;
+	height: 820px;
+	background-color:white;
+	float: right;
+}
+.clearfloat { /* clears bottom of webpage. Styled to include email address in footer */
+	clear: both;
+	text-align: center;
+	font-family: Aria, Helvetica, sans-serif;
+	font-size: 18pt;
+}
