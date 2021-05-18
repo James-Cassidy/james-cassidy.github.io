@@ -100,7 +100,7 @@ nav{display: none; }
 
 // Intro Section 
 .intro{
-  postion: relative;
+  postion: relative; //relative to its postion
 }
 
 .intro__img{
@@ -111,16 +111,16 @@ nav{display: none; }
   display:inline-block;
 }
 
-@media (min-width: 600px){
-  .intro{
-    display: grid;
-    width: min-content;     //Will keep the intro section centred on screen
-    margin: 0 auto;
-    grid-column-gap: 1em;
-    grid-template-areas:
-      "img title"
-      "img subtitle";
-    grid-template-columns: min-content max-content;
+@media (min-width: 600px) {
+  .intro {
+      display: grid;
+      width: min-content;
+      margin: 0 auto; //Will keep intro centered
+      grid-column-gap: 1em;
+      grid-template-areas: 
+          "img title"
+          "img subtitle";
+      grid-template-columns: min-content max-content;
   }
 
   .intro__img{
