@@ -1,4 +1,4 @@
-## Welcome to My Portfolio
+## My Portfolio
 
 You can use the [editor on GitHub](https://github.com/James-Cassidy/james-cassidy.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
