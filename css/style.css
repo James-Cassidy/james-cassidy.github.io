@@ -183,6 +183,10 @@ header{
   z-index: 1000;
 }
 
+.nav-open {
+  background: red;
+}
+
 .hamburger {
   display: block;
   position: relative;
