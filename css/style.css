@@ -281,6 +281,10 @@ header{
 }
 
 .my-services {
+  /*
+  The rgba() function define colors using the Red-green-blue-alpha (RGBA) model.
+  rgba function used within linear gradient to give darker appearence
+  */
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(../img/WFH.jpg);
   background-size: cover;
   color: var(--clr-light);
