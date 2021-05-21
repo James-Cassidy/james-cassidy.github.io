@@ -9,14 +9,14 @@
 :root {
     --ff-primary: 'Source Sans Pro', sans-serif;
     --ff-secondary: 'Source Code Pro', monospace;
-    
+
     --fw-reg: 300;
     --fw-bold: 900;
-    
+
     --clr-light: #fff;
     --clr-dark: #303030;
     --clr-accent: #3adfa8;
-    
+
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
@@ -256,7 +256,7 @@ header{
       width: min-content;
       margin: 0 auto; /*Will keep intro centered*/
       grid-column-gap: 1em;
-      grid-template-areas: 
+      grid-template-areas:
           "img title"
           "img subtitle";
       grid-template-columns: min-content max-content;
@@ -295,7 +295,7 @@ header{
 
 /* Must have 'content' */
 .section__title--services::after {
-  content: '';                   
+  content: '';
   display: block;
   width: 2em;
   height: 1px;
@@ -310,7 +310,7 @@ header{
 
 /* Smaller screens allows paragraph to have a set width instead of expanding as webpage expands */
 .service {
-  max-width: 500px; 
+  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -341,17 +341,17 @@ header{
   .about-me {
       display: grid;
       grid-template-columns: 1fr 200px;
-      grid-template-areas: 
+      grid-template-areas:
           "title img"
           "subtitle img"
           "text img";
       grid-column-gap: 2em;
   }
-  
+
   .section__title--about {
       grid-area: title;
   }
-  
+
   .section__subtitle--about {
       grid-column: 1 / -1;
       grid-row: 2;
@@ -361,7 +361,7 @@ header{
       padding-left: 1em;
       padding-right: calc(200px + 4em); /* Text will never touch the image*/
   }
-  
+
   .about_me-image {
       grid-area: img;
       position: relative; /* Appear over text */
@@ -374,7 +374,7 @@ header{
 .my-work {
   background-color: var(--clr-dark);
   color: var(--clr-light);
-  text-align: center;    
+  text-align: center;
 }
 
 .portfolio {
@@ -388,7 +388,7 @@ header{
 }
 
 .portfolio__img {
-  transition: 
+  transition:
       transform 750ms cubic-bezier(.5, 0, .5, 1),
       opacity 250ms linear;
 }
@@ -413,7 +413,7 @@ header{
   padding: 2.5em 0;
 }
 
-.footer a { 
+.footer a {
   color: inherit;
   text-decoration: none;
 }
