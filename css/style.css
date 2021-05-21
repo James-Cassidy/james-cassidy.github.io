@@ -451,3 +451,17 @@ header{
 .social-list_link {
   padding: .5em;
 }
+
+/* Project individual Items; */
+
+.project-item_individual {
+  padding: 0 2em 2em;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.project-item_individual p{
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
