@@ -239,7 +239,7 @@ header{
 /* Intro Section */
 
 .intro{
-  postion: relative; /*relative to its postion*/
+  position: relative; /*relative to its postion*/
 }
 
 .intro__img{
